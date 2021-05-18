@@ -1,0 +1,539 @@
+/*
+*/
+// add link
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+// Add css file
+@import "variable";
+@import "funbtn";
+*,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $swap;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+// login page
+section.section {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(13, 184, 50);
+    overflow: hidden;
+    position: relative;
+    display: block;
+    // main_center
+    .main_center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(219, 208, 208);
+        width: 38rem;
+        min-width: 38rem;
+        box-shadow: 0.1rem 0.1rem 1.5rem #000;
+        text-align: center;
+        padding: 2rem;
+        // h2.before
+        h2.before {
+            color: crimson;
+            font-size: 2rem;
+        }
+        hr {
+            width: 9rem;
+            border: crimson 0.1rem solid;
+            margin: 1rem auto;
+        }
+        .form_div {
+            display: block;
+            margin-top: 1rem;
+            padding: 2rem;
+
+            // form
+            .display {
+                display: flex;
+                border: rgb(77, 76, 76) 0.1rem solid;
+                height: 3.5rem;
+                margin-top: 1rem;
+
+                // icon div
+                div.icon {
+                    width: 3.5rem;
+                    background: rgb(219, 208, 208);
+                    line-height: 3.5rem;
+                    font-size: 2rem;
+                    display: block;
+                    border-right: rgb(77, 76, 76) 0.1rem solid;
+                }
+                input {
+                    width: 80%;
+                    border: none;
+                    background: transparent;
+                    padding: 0 1rem;
+                    font-weight: 600;
+                    outline: none;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.1rem;
+                    font-size: 1.8rem;
+
+                    &::placeholder {
+                        color: #000;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+
+            div.subbtn {
+                display: block;
+                margin: 1rem 0;
+
+                .login {
+                    width: 14rem;
+                    height: 4rem;
+                    outline: none;
+                    color: #fff;
+                    font-weight: 800;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                    background: crimson;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            h3 {
+                color: red;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    // add button
+    .add_login {
+        position: absolute;
+        bottom: 5rem;
+        right: 5rem;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        background: crimson;
+        color: #fff;
+        display: block;
+        a {
+            color: #fff;
+            font-size: 1.5rem;
+            display: block;
+            text-decoration: none;
+        }
+    }
+}
+// Dashboard
+section.home_page {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(200, 193, 193);
+    position: relative;
+    display: flex;
+    header.header {
+        position: relative;
+        margin-left: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+        display: block;
+        main.main {
+    
+            display: block;
+            padding: 2rem;
+            background: rgb(255, 255, 255);
+            height: auto;
+            
+            .button_class{
+                display: flex;
+                button{
+                background: crimson;
+                color: #fff;
+                display: block;
+                text-align: center;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin: 0 1rem;
+                   &:hover{
+                       color: #FFF;
+                       background: rgb(31, 5, 18);
+                   }
+                }
+                #btn1{
+                    color:#fff;
+                    background: rgb(31, 5, 18);
+                }
+            
+            }
+            hr {
+                margin-top: 2rem;
+            }
+        }
+        .copyright {
+            margin: 4rem ;
+            p {
+                font-size: 1.6rem;
+                font-weight: 900;
+                color: rgb(110, 108, 108);
+                text-transform: capitalize;
+            }
+        }
+// nav bar top
+        nav div.navbar {
+            width: 100%;
+            background: rgb(31, 5, 18);
+            color: #fff;
+            height: 7rem;
+            z-index: 999!important;
+
+            .logo {
+                width: 95%;
+                margin: auto;
+                height: 100%;
+                font-size: 1.8rem;
+                display: flex;
+                justify-content: space-between;
+
+                button#btnopens {
+                    font-size: 2rem;
+                    color: #fff;
+                    background: crimson;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                    width: 5rem;
+                    display: block;
+                    height: 5rem;
+                    margin: auto 0;
+                }
+                .manubar {
+                    display: flex;
+                    width: 20rem;
+                    margin: 1rem 0;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                    .manubar-icon {
+
+                        .menu_icon {
+                            cursor: pointer;
+                            margin: 0.5rem 2rem;
+                            background: crimson;
+                            height: 4rem;
+                            padding: 1rem;
+                            text-transform: capitalize;
+                            text-align: center;
+                        }
+                        .modal_menutt {
+                            list-style: none;
+                            background: rgb(214, 198, 198);
+                            min-width: 15rem;
+                            display: none;
+                            transition: all 0.2s;
+                            z-index: 9999999!important;
+
+                            li {
+                                text-align: center;
+                                display: block;
+                                color: #fff;
+                                &:hover {
+                                    background: crimson;
+                                    color: #fff;
+                                }
+                                a {
+                                    color: crimson;
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    display: block;
+                                    padding: 1rem 2rem;
+                                    &:hover {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .mlticon{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // nav bar left
+ nav div.navber {
+        width: 30rem;
+        background: rgb(31, 5, 18);
+        color: #fff;
+        height: 100vh;
+        position: relative;
+        transition: 0.3s;
+        
+
+        .main_bar {
+            padding: 1rem 0;
+            .modal_menu {
+                list-style: none;
+                z-index: 1;
+                margin-top: 5rem;
+                
+                li {
+                    text-align: left;
+                    display: block;
+                    display: flex;
+                    padding: 0 2rem;
+                    
+                    a {
+                        color: crimson;
+                        text-decoration: none;
+                        font-weight: 700;
+                        display: inline-flex;
+                        font-size: 1.8rem;
+                        color: #fff; 
+                        padding: 1rem 0;
+
+                        
+                        .solink{
+                            font-size: 2rem;
+                        }
+                        .items{
+                            padding: 0 0 0 1.5rem;
+                        
+                        }
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                    &:hover {
+                        background: crimson;
+                    }
+                }
+            }
+        }
+    }
+
+    // add button
+    .add_login {
+        position: absolute;
+        bottom: 3rem;
+        right: 3rem;
+        width: 30rem;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+
+        button {
+            width: 5rem;
+            height: 5rem;
+            text-align: center;
+            background: crimson;
+            color: #fff;
+            display: block;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 5rem;
+            font-size: 1.5rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin: 0.5rem;
+            z-index: 1;
+        }
+        .puse_table {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 25rem;
+            display: none;
+
+            form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    width: 75%;
+                    height: 3.5rem;
+                    border: 0.2rem crimson solid;
+                    padding: 0 2rem;
+                    outline: none;
+                    &::placeholder {
+                        font-size: 1.8rem;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// post page
+
+section.post {
+    width: 90%;
+    height: 32rem;
+    position: relative;
+    margin: 1rem auto;
+    overflow: hidden;
+    
+   
+    div.content{
+         position: absolute;
+         display: flex;
+         width: 100%!important;
+         transform: translateX(105%);
+         transition: 0.3s;
+         
+
+    div.post {
+        width: 100%!important;
+        
+        .form_group form {
+            color: black;
+
+            .control {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem 0;
+                
+
+                label{
+                    margin: 1rem 0;
+                    font-size: 1.8rem;
+                }
+                button{
+                    background: crimson;
+                    color: #fff;
+                    display: block;
+                    text-align: center;
+                    padding: 1rem 0;
+                    font-size: 1.5rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+                textarea{
+                    min-height: 100px;
+                    max-height: 100px;
+                    min-width: 100%;
+                    max-width: 100%;
+                    padding: 1rem;
+                    font-size: 1.8rem;
+                    border: crimson 0.2rem solid;
+
+                }
+                input[type="file"] {
+                    padding: 1rem;
+                    border: crimson 0.2rem solid;
+                }
+            }
+            
+            .custom-select{
+                width: 100%;
+                height: 4rem;
+                border: crimson 0.2rem solid;
+                font-size: 1.8rem;
+                padding: 0 2rem;
+            }
+
+        }
+    }
+}
+#content1{
+    transform: translateX(0px);
+  }
+
+}
+// dashboard
+.card{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .card_title{
+        width: 28rem;
+        height: 10rem;
+        margin: 2rem 1rem;
+        position: relative;
+
+        &:nth-child(1){
+            background: rgb(189, 132, 11);
+            color: rgb(189, 132, 11);;
+        }
+        &:nth-child(2){
+            background: rgb(189, 11, 55);
+            color:rgb(189, 11, 55);
+        }
+        &:nth-child(3){
+            background: rgb(26, 105, 10);
+            color: rgb(26, 105, 10);
+        }
+        &:nth-child(4){
+            background: rgb(9, 141, 130);
+            color: rgb(9, 141, 130);
+        }
+
+        // span
+
+        span{
+            position: absolute;
+            width: 8rem;
+            border-radius: 50%;
+            line-height: 8rem;
+            text-align: center;
+            height: 8rem;
+            background: rgb(255, 251, 251);
+            top:-3rem;
+            left: 2rem;
+            font-size: 3rem;            
+        }
+        p,h1{
+            text-align: right;
+            margin: 1rem 2rem;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        h1{
+            font-size: 3.5rem;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On screens that are 700px wide or less*/
+
+@media screen and (max-width: 700px) {
+    nav div.navber {
+        display: none;
+
+    }
+  }

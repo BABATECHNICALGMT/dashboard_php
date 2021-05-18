@@ -1,0 +1,18 @@
+
+@mixin button_baba($padding,$btncolor,$btntext,$btnblack){
+    padding: $padding;
+    border: .2rem solid $btncolor;
+    outline: none;
+    border-radius: 2rem;
+    color: $btncolor;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background : $btnblack;
+    
+    &:hover{
+         outline: none;
+         background : $btncolor;
+         color: $btntext;
+    }
+}

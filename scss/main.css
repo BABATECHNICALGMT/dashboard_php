@@ -1,0 +1,610 @@
+/*
+*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section.section {
+  width: 100vw;
+  height: 100vh;
+  background: #0db832;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+section.section .main_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #dbd0d0;
+  width: 38rem;
+  min-width: 38rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 1.5rem #000;
+          box-shadow: 0.1rem 0.1rem 1.5rem #000;
+  text-align: center;
+  padding: 2rem;
+}
+
+section.section .main_center h2.before {
+  color: crimson;
+  font-size: 2rem;
+}
+
+section.section .main_center hr {
+  width: 9rem;
+  border: crimson 0.1rem solid;
+  margin: 1rem auto;
+}
+
+section.section .main_center .form_div {
+  display: block;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+section.section .main_center .form_div .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: #4d4c4c 0.1rem solid;
+  height: 3.5rem;
+  margin-top: 1rem;
+}
+
+section.section .main_center .form_div .display div.icon {
+  width: 3.5rem;
+  background: #dbd0d0;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  display: block;
+  border-right: #4d4c4c 0.1rem solid;
+}
+
+section.section .main_center .form_div .display input {
+  width: 80%;
+  border: none;
+  background: transparent;
+  padding: 0 1rem;
+  font-weight: 600;
+  outline: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+section.section .main_center .form_div .display input::-webkit-input-placeholder {
+  color: #000;
+  padding: 0 1rem;
+}
+
+section.section .main_center .form_div .display input:-ms-input-placeholder {
+  color: #000;
+  padding: 0 1rem;
+}
+
+section.section .main_center .form_div .display input::-ms-input-placeholder {
+  color: #000;
+  padding: 0 1rem;
+}
+
+section.section .main_center .form_div .display input::placeholder {
+  color: #000;
+  padding: 0 1rem;
+}
+
+section.section .main_center .form_div div.subbtn {
+  display: block;
+  margin: 1rem 0;
+}
+
+section.section .main_center .form_div div.subbtn .login {
+  width: 14rem;
+  height: 4rem;
+  outline: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: crimson;
+  border: none;
+  cursor: pointer;
+}
+
+section.section .main_center .form_div h3 {
+  color: red;
+  font-size: 1.6rem;
+}
+
+section.section .add_login {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background: crimson;
+  color: #fff;
+  display: block;
+}
+
+section.section .add_login a {
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+}
+
+section.home_page {
+  width: 100vw;
+  height: 100vh;
+  background: #c8c1c1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home_page header.header {
+  position: relative;
+  margin-left: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+  display: block;
+}
+
+section.home_page header.header main.main {
+  display: block;
+  padding: 2rem;
+  background: white;
+  height: auto;
+}
+
+section.home_page header.header main.main .button_class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home_page header.header main.main .button_class button {
+  background: crimson;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+section.home_page header.header main.main .button_class button:hover {
+  color: #FFF;
+  background: #1f0512;
+}
+
+section.home_page header.header main.main .button_class #btn1 {
+  color: #fff;
+  background: #1f0512;
+}
+
+section.home_page header.header main.main hr {
+  margin-top: 2rem;
+}
+
+section.home_page header.header .copyright {
+  margin: 4rem;
+}
+
+section.home_page header.header .copyright p {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #6e6c6c;
+  text-transform: capitalize;
+}
+
+section.home_page header.header nav div.navbar {
+  width: 100%;
+  background: #1f0512;
+  color: #fff;
+  height: 7rem;
+  z-index: 999 !important;
+}
+
+section.home_page header.header nav div.navbar .logo {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.home_page header.header nav div.navbar .logo button#btnopens {
+  font-size: 2rem;
+  color: #fff;
+  background: crimson;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 5rem;
+  display: block;
+  height: 5rem;
+  margin: auto 0;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  margin: 1rem 0;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .menu_icon {
+  cursor: pointer;
+  margin: 0.5rem 2rem;
+  background: crimson;
+  height: 4rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .modal_menutt {
+  list-style: none;
+  background: #d6c6c6;
+  min-width: 15rem;
+  display: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 9999999 !important;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .modal_menutt li {
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .modal_menutt li:hover {
+  background: crimson;
+  color: #fff;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .modal_menutt li a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .modal_menutt li a:hover {
+  color: #fff;
+}
+
+section.home_page header.header nav div.navbar .logo .manubar .manubar-icon .mlticon {
+  display: block;
+}
+
+section.home_page nav div.navber {
+  width: 30rem;
+  background: #1f0512;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.home_page nav div.navber .main_bar {
+  padding: 1rem 0;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu {
+  list-style: none;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li {
+  text-align: left;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li a .solink {
+  font-size: 2rem;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li a .items {
+  padding: 0 0 0 1.5rem;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li a:hover {
+  color: #fff;
+}
+
+section.home_page nav div.navber .main_bar .modal_menu li:hover {
+  background: crimson;
+}
+
+section.home_page .add_login {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 30rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+section.home_page .add_login button {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background: crimson;
+  color: #fff;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  z-index: 1;
+}
+
+section.home_page .add_login .puse_table {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25rem;
+  display: none;
+}
+
+section.home_page .add_login .puse_table form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.home_page .add_login .puse_table form input {
+  width: 75%;
+  height: 3.5rem;
+  border: 0.2rem crimson solid;
+  padding: 0 2rem;
+  outline: none;
+}
+
+section.home_page .add_login .puse_table form input::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+section.home_page .add_login .puse_table form input:-ms-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+section.home_page .add_login .puse_table form input::-ms-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+section.home_page .add_login .puse_table form input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+section.post {
+  width: 90%;
+  height: 32rem;
+  position: relative;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+section.post div.content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important;
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.post div.content div.post {
+  width: 100% !important;
+}
+
+section.post div.content div.post .form_group form {
+  color: black;
+}
+
+section.post div.content div.post .form_group form .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+section.post div.content div.post .form_group form .control label {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+section.post div.content div.post .form_group form .control button {
+  background: crimson;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+section.post div.content div.post .form_group form .control textarea {
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border: crimson 0.2rem solid;
+}
+
+section.post div.content div.post .form_group form .control input[type="file"] {
+  padding: 1rem;
+  border: crimson 0.2rem solid;
+}
+
+section.post div.content div.post .form_group form .custom-select {
+  width: 100%;
+  height: 4rem;
+  border: crimson 0.2rem solid;
+  font-size: 1.8rem;
+  padding: 0 2rem;
+}
+
+section.post #content1 {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.card {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card .card_title {
+  width: 28rem;
+  height: 10rem;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
+.card .card_title:nth-child(1) {
+  background: #bd840b;
+  color: #bd840b;
+}
+
+.card .card_title:nth-child(2) {
+  background: #bd0b37;
+  color: #bd0b37;
+}
+
+.card .card_title:nth-child(3) {
+  background: #1a690a;
+  color: #1a690a;
+}
+
+.card .card_title:nth-child(4) {
+  background: #098d82;
+  color: #098d82;
+}
+
+.card .card_title span {
+  position: absolute;
+  width: 8rem;
+  border-radius: 50%;
+  line-height: 8rem;
+  text-align: center;
+  height: 8rem;
+  background: #fffbfb;
+  top: -3rem;
+  left: 2rem;
+  font-size: 3rem;
+}
+
+.card .card_title p, .card .card_title h1 {
+  text-align: right;
+  margin: 1rem 2rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card .card_title h1 {
+  font-size: 3.5rem;
+}
+
+/* On screens that are 700px wide or less*/
+@media screen and (max-width: 700px) {
+  nav div.navber {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
